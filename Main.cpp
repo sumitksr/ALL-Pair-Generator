@@ -29,14 +29,16 @@ using namespace std;
             nums.push_back(x);
         }
         solve(nums,ans,output,0);
-        for (const auto &subset : ans) {
+        for (const auto& subset : ans) {
         cout << "[";
-        for (int num : subset) {
-            cout << num ;
+        for (size_t i = 0; i < subset.size(); i++) {
+            cout << subset[i];
             if (i != subset.size() - 1) {
                 cout << " ";  
             }
         }
+        cout << "]" << endl;
+    }
         cout << "]" << endl;
     }
     }
