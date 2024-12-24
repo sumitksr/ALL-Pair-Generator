@@ -32,7 +32,10 @@ using namespace std;
         for (const auto &subset : ans) {
         cout << "[";
         for (int num : subset) {
-            cout << num << " ";
+            cout << num ;
+            if (i != subset.size() - 1) {
+                cout << " ";  
+            }
         }
         cout << "]" << endl;
     }
